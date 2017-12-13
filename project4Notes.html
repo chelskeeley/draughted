@@ -1,0 +1,111 @@
+<!-- 
+PERSONAL CHALLENGES
+-use clip path for something
+-use at LEAST 1 jQuery plugIN
+-use jQuery UI library
+-have some sort of progress bar or waiting icon for while the user is waiting for the ajax to return the promises
+
+
+url: "http://en.wikipedia.org/w/api.php?action=parse&format=json&prop=text&section=0&page=Jimi_Hendrix&callback=?
+
+
+03674b74502b4a884e8ac194a998c62e
+
+BrewQuest
+A Crafty Guide to Local Beer
+DRAUGHTED
+A Crafty Guide to Local Brews
+
+
+
+-have user search by their area to see what breweries are in their area (use locations endpoint, with countryIsoCode param = CA, user enters locality param in text input)
+
+
+-show list of local breweries (maybe in square-ish tiles, give dimensions, all flexed and wrapped)
+-when one is selected, save the brewery ID in a variable. 
+-use the saved variable in breweryid/beers endpoint to access beer available from that brewery(filter for available{name: Year Round})(maybe in a flickity gallery instead of pages of results?)
+-display all year round beers to the user (maybe in a list that can accordion open and shut to show beer description)
+-allow them to click more info about the brewery, and it will populate some information from the brewery API
+-also populate website for the brewery from the api
+
+
+
+CAN I USE A VARIABLE IN A URL ENDPOINT FOR ANOTHER REQUEST?? -> to use brewery/beers endpoint to find all beers from that selected brewery
+YES, PUT THE URL IN THE AJAX REQUEST IN TEMPLATE LITERAL
+
+            pokemon.getPokemon = (id) => {
+                return $.ajax({ 
+                    url: `https://pokeapi.co/api/v2/pokemon/${id}/`, 
+                     method: 'GET', 
+                     dataType: 'json', 
+                }); }; pokemon.getPokemon(1) .then((res) =>{ console.log(res) })
+
+
+
+
+-there is an endpoint for random local breweries
+
+
+DESCRIPTION OF PROJECT
+This web app will be used to locate breweries in certain localities depending on the user input. The user will be able to see what locations are available in that area if any, and will be able to look at what beer the brewery makes and tasting notes on said beers.
+
+
+
+
+MVP
+-user searches city
+-pulls brewery options, allow user to select the brewery
+-shows list of beer from that brewery
+-allows user to select more info on the brewery
+-brewery info will show description from the API, as well as website url if available
+
+
+
+
+STRETCH GOALS
+-Give the user some choices in a drop down for beer styles(ie ale, lager, pilsner, wheat beer etc), and use the wikipedia
+API to pull information for each and display to the user
+-add a map in the brewery info using the address from the api to locate it on a map
+
+
+DISCOVERY PHASE
+    RESEARCHED DATA
+        -use brewerydb.com API, using the brewery location and breweryid:beers endpoints
+        FOR STRETCH
+        -use wikipedia API to search certain landing pages, parse data down to pull first <p> from page
+        -populate google map with street address for each brewery from API
+
+
+    PSEUODOCODE
+        -The user will search an city to see what local breweries are in the chosen area
+        -pull all breweries in that area from brewerybd location endpoint
+        -if no results, display a message to the user
+        -The API will return a list of local breweries
+        -the user can click on a brewery
+        -save the ID# of the clicked brewery (from original ajax request) and make new ajax request to breweryid:beers endpoint to see the available Year Round beers
+        -display the beer available from that brewery in a list on left side, and the tasting description from the API as accordian drop down
+        -display brewery info on the right, with brewery name, description from API, google map for stretch
+        -have dropdown list at bottom for beer types (ie pilsner, amber etc), selection will pull info from wikipedia API about that style and display to the user
+
+
+    WIREFRAME
+
+
+
+
+
+
+DESIGN IDEAS
+
+//FOR POLISHING
+-remove duplicate results
+-add my own alerts for validation and api fail()
+
+
+
+
+
+
+
+
+ -->

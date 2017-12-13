@@ -1,0 +1,72 @@
+.breweryBeersStyle {
+    min-height: 100vh;
+
+}
+
+.breweryBeersContent {
+    color: #1f2d36;
+    display: flex;
+    flex-direction: column;
+    background: white;
+    border-radius: 5px;
+    margin-bottom: 40px;
+}
+
+//INFO FOR SELECTED BREWERY
+.breweryInfo {
+    h3 {
+        font-size: 2.5rem;
+        text-align: center;
+        margin-top: 0;
+    }
+    p {
+        line-height: 2.3rem;
+    }
+}
+
+.selectedBrewery {
+    display: flex;
+    flex-direction: column;
+}
+
+#map {
+    width: 100%;
+}
+
+.mapSizing {
+    height: 250px;
+    margin-bottom: 40px;
+}
+
+//BEERS LIST FOR SELECTED BREWERY
+
+.aboutBeers {
+    display: flex;
+    justify-content: space-between;
+    @media (max-width: 750px){
+        flex-direction: column;
+    }
+}
+
+.beers,
+.wikiBeers {
+    width: 48%;
+    @media (max-width: 750px){
+        width: 100%;
+    }
+}
+
+.ui-accordion-header.ui-state-active {
+    background: #AA660E;
+    border: 1px solid #975b0c;
+}
+
+//WIKIPEDIA INFO FOR BEER STYLE
+.wikiResults {
+    p {
+        line-height: 2.3rem;
+        
+    }
+}
+
+

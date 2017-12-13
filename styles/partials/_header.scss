@@ -1,0 +1,110 @@
+header {
+    min-height: 100vh;
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    iframe[style] {
+        position: fixed !important;//to override inline styles of twitter button
+        top: 10px;
+        right: 10px;
+    }
+    iframe {
+        z-index: 99999;
+    }
+    form {
+        @media (max-width: 800px){
+            display: flex;
+            flex-direction: column;
+        }
+    }
+    label {
+        color: #efa541;
+        @media (max-width: 800px){
+            margin-bottom: 10px;
+        }
+    }
+}
+
+
+.visuallyhidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+
+.logo {
+    display: inline-block;
+    text-align: center;
+    width: 500px;
+    @media (max-width: 550px){
+        width: 400px;
+    }
+    @media (max-width: 420px){
+        width: 300px;
+    }
+    img {
+        margin: 0 auto;
+        text-align: center;
+        width: 100%;
+    }
+}
+
+.flourish {
+    width: 500px;
+    @media (max-width: 800px){
+        width: 65%;
+    }
+    img {
+        width: 100%;
+    }
+}
+
+
+input[type='text'] {
+    border: none;
+    border-bottom: 3px solid #efa541;
+    background: rgba(31,45,54,0.3);
+    margin: 0 10px;
+    padding: 5px;
+    color: #efa541;
+    font-size: 1.6rem;
+    font-family: 'Oxygen', 'Raleway', 'Source Sans Pro', sans-serif;
+    @media (max-width: 800px){
+        margin-bottom: 10px;
+    }
+}
+
+input[type='submit'] {
+    border: 2px solid #efa541;
+    border-radius: 2px;
+    padding: 5px 10px;
+    color: #efa541;
+    font-size: 1.6rem;
+    font-family: 'Oxygen', 'Raleway', 'Source Sans Pro', sans-serif;
+    text-transform: uppercase;
+    background: rgba(31,45,54,0.3);
+    @media (max-width: 800px){
+        align-self: center;
+    }
+}
+
+input[type='submit']:hover,
+input[type='submit']:focus {
+    color: #1f2d36;
+    background: #efa541;
+    
+    
+}
+
+
+    

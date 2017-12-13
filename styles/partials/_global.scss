@@ -1,0 +1,45 @@
+html {
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Oxygen', 'Raleway', 'Source Sans Pro', sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    border: 1px solid black;//for margin collapse on body
+    font-size: 1.6rem;
+    background: linear-gradient( rgba(31,45,54,0.3), rgba(31,45,54,0.3) ), url(../assets/wood.jpg);
+	background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #efa541;
+ 
+}
+
+.wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+//PADDING AND BOXSHADOW STYLING CLASS
+.boxStyle {
+    border: 2px solid #1f2d36;
+    box-shadow: 0 0 25px rgba(239,165,65,1);
+    padding: 40px;
+    @media (max-width: 1040px){
+        margin: 0 40px;
+    }
+    @media (max-width: 400px){
+        padding: 20px;
+        margin: 0 20px;
+    }
+    
+}
+
+footer {
+    text-align: center;
+}

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Draughted</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Oxygen" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.css">
+    <link rel="icon" href="assets/beerFavicon.png">
+    
+</head>
+<body>
+    <header>
+        <div class="wrapper">
+            <div class="logo">
+                <img src="assets/logov2.png" aria-hidden="true">
+            </div>
+            <h1 class="visuallyhidden">Draughted</h1>
+            <h2 class="visuallyhidden">A Crafty Guide to Local Brews</h2>
+            <div class="flourish">
+                <img src="assets/flourish2.png" aria-hidden="true">
+            </div>
+            <form action="">
+                <label for="userLocation">Please Enter a Canadian City:</label>
+                <input type="text" id="userLocation">
+                <input type="submit" value="Submit">
+            </form>
+            <div class="flourish">
+                <img src="assets/flourish2flip.png" aria-hidden="true">
+            </div>
+        </div>
+        <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-show-count="false" data-size="large"
+            data-text='Draughted! A Crafty Guide to Local Brews.' data-url="http://www.chelseakeeley.com/draughted">
+            <link>Tweet</a>
+    </header>
+    <main>
+        <section class="brewery first">
+            <div class="wrapper">
+                <div class="breweryContent">
+                   <!-- js populates content here -->
+                </div>
+            </div>
+        </section>
+        <section class="breweryBeers" id="second">
+            <div class="wrapper">
+                <div class="breweryBeersContent">
+                    <div class="selectedBrewery">
+                        <div class="breweryInfo">
+                        <!-- js populates content here -->
+                        </div>
+                        <div id='map'>
+                        <!-- js populates content here -->
+                        </div>
+                    </div>
+                    <div class="aboutBeers">
+                        <div class="beers" id='accordion'>
+                        <!-- js populates content here -->
+                        </div>
+                        <div class="wikiBeers">
+                            <div class="wikiForm">
+                            <!-- js populates content here -->
+                                
+                            </div>
+                            <div class="wikiResults" id="wikiResults">
+                            <!-- js populates content here -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+   
+
+
+    <!-- jquery -->
+    <script src='https://code.jquery.com/jquery-3.2.1.min.js' integrity='sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4='crossorigin='anonymous'></script>
+    <!-- jquery UI -->
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>    
+    <!-- google maps API -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCKKxFUhazGQh_74kC1urDQglROfmRrZ9U">
+    </script>
+    <!-- jquery smoothScroll -->
+    <script src="js/smoothScroll.js"></script>
+    <!-- twitter button js -->
+    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    <!-- my js -->
+    <script src="js/javascript.js"></script>
+</body>
+<footer>
+    <div class="wrapper">
+        <p>Coded by Chelsea Keeley | &copy 2017</p>
+    </div>
+</footer>
+</html>
+<!-- credits:
+-jquery request for wikipedia API access and parsing courtesy of http://www.9bitstudios.com/2014/03/getting-data-from-the-wikipedia-api-using-jquery/
+-flourishes adapted from https://www.vecteezy.com/vector-art/93685-divider-set-vector
+-Draughted Logo created on Hipster Logo Generator
+-google map color styles adapted from Snazzy Maps: https://snazzymaps.com/style/129786/yellow
+-background wood grain courtesy of Photo by Joshua Newton on Unsplash-->
+
+
+<!-- 
+
+go through credits -->
